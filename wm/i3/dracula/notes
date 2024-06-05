@@ -1,0 +1,22 @@
+
+Font: JetBrainsMonoNerdFontPropo
+
+Autostart:
+
+  i3bar
+  i3status
+  i3lock
+  nm-applet
+  picom
+  pactl
+  dex
+  nitrogen
+  xrandr
+
+
+Manualstart:
+  i3lock
+  alacritty
+  dmenu
+  rofi
+
