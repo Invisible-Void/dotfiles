@@ -1,0 +1,39 @@
+# Alacritty Config File
+
+# Window configurations
+window:
+  opacity: 0.9
+
+  padding:
+    x: 6
+    y: 6
+
+  dimensions:
+    columns: 130
+    lines: 38
+
+# Mouse scroll settings
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Font configuration
+font:
+    size: 12
+    normal:
+        family: JetBrainsMonoNerdFontPropo
+        style: Regular
+
+# Imports color and font themes from ~/.config/alacritty/color.yml|font.yml
+import:
+  - ~/.config/alacritty/color.yml
+     
+# Custom keybindings
+key_bindings:
+    # (Windows, Linux, and BSD only)
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: F11,       mods: None,          action: ToggleFullscreen            }
+  - { key: T,         mods: Control|Shift, action: CreateNewWindow             }
